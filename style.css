@@ -412,6 +412,97 @@ nav ul li a:hover::after {
   transform: scale(1.2);
 }
 
+/* ========================= Responsive Design ========================= */
+@media (max-width: 992px) {
+    .container,
+    .container-portfolio,
+    .education-container,
+    .achievements-container,
+    .skills-container {
+        padding: 0 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-right: 20px;
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-top: 100px;
+    }
+
+    .image-container img {
+        width: 250px;
+        height: 250px;
+        margin-top: 30px;
+    }
+
+    .welcome h1 {
+        font-size: 36px;
+    }
+
+    .sub-title {
+        font-size: 36px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-col-2 p {
+        max-width: 100%;
+    }
+
+    .work-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .contact-icons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skill-fill::after {
+        top: -35px;
+        font-size: 12px;
+    }
+
+    .welcome h1 {
+        font-size: 28px;
+    }
+
+    .sub-title {
+        font-size: 28px;
+    }
+}
+
 
 
 
