@@ -316,7 +316,7 @@ nav ul li a:hover::after {
 
 /* Specific skill widths */
 .htmlcss { width: 80%; }
-.python { width: 70%; }
+.react { width: 70%; }
 .cpp { width: 90%; }
 .verilog { width: 80%; }
 
