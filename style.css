@@ -61,7 +61,7 @@ nav ul li a:hover::after {
     position: relative;
 }
 
-/* Profile image: right side, not absolute */
+/* Profile image */
 .image-container img {
     width: 400px;
     height: 400px;
@@ -71,7 +71,7 @@ nav ul li a:hover::after {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
-/* Welcome text: left side */
+/* Welcome text */
 .welcome {
     max-width: 500px;
 }
@@ -85,7 +85,6 @@ nav ul li a:hover::after {
     font-size: 22px;
     font-weight: normal;
 }
-
 
 .welcome span {
     color: #6acfd1;
@@ -205,7 +204,6 @@ nav ul li a:hover::after {
   padding-left: 10px;
 }
 
-
 .education {
   padding: 100px 5%;
   color: white;
@@ -222,7 +220,6 @@ nav ul li a:hover::after {
   margin: auto;
   text-align: left;
 }
-
 
 .edu-left {
   flex: 1;
@@ -351,7 +348,6 @@ nav ul li a:hover::after {
   transform: translateY(-5px);
 }
 
-
 .experience-heading {
   display: flex;
   justify-content: space-between;
@@ -418,19 +414,22 @@ nav ul li a:hover::after {
   min-width: 300px;
   background: #0f0f0f;
   border-radius: 16px;
-  border-left: 5px solid #6acfd1;
+  border: 2px solid #6acfd1; /* Added curved green colored box */
   padding: 30px 25px;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.3s ease;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center align the text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 30px;
 }
 
 .work:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(106, 207, 209, 0.2); /* Added subtle glow effect on hover */
 }
 
 .work h3 {
@@ -444,15 +443,12 @@ nav ul li a:hover::after {
   color: #dddddd;
   line-height: 1.6;
   margin-bottom: 20px;
-  flex-grow: 1; /* Pushes the icon to the bottom */
 }
 
 .work a {
   color: #6acfd1;
   font-size: 24px;
   text-decoration: none;
-  align-self: flex-start;
-  margin-top: auto;
   transition: transform 0.3s ease;
 }
 
