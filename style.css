@@ -15,7 +15,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* ========== TOP NAVBAR ========== */
 nav {
     position: absolute;
@@ -26,14 +25,14 @@ nav {
 nav ul {
     display: flex;
     list-style-type: none;
-    gap: 80px;
+    gap: 35px;
     padding-right: 70px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     transition: color 0.3s ease;
     position: relative;
 }
@@ -140,6 +139,7 @@ nav ul li a:hover::after {
     text-align: left;
     max-width: 400px;
 }
+
 .fun-facts {
   color: white;
   padding: 100px 5%;
@@ -409,17 +409,19 @@ nav ul li a:hover::after {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .work {
   flex: 1 1 calc(33.333% - 30px);
   max-width: calc(33.333% - 30px);
+  min-width: 300px;
   aspect-ratio: 4/3;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
   display: block;
+  margin-bottom: 30px;
 }
 
 /* Images */
@@ -513,7 +515,7 @@ nav ul li a:hover::after {
 
     nav ul {
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 20px;
         padding-right: 20px;
         justify-content: center;
     }
@@ -557,7 +559,31 @@ nav ul li a:hover::after {
         flex: 1 1 100%;
         max-width: 100%;
     }
-  }
+
+    .fun-facts-row {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .fun-col-1 img {
+      max-width: 280px;
+    }
+
+    .fun-col-2 {
+      text-align: left;
+    }
+
+    .fun-col-2 .sub-title {
+      font-size: 32px;
+    }
+
+    .fun-list li {
+      text-align: left;
+      border-left: none;
+      padding-left: 0;
+    }
+}
   
 @media (max-width: 576px) {
   /* Navigation styles */
@@ -569,9 +595,9 @@ nav ul li a:hover::after {
 
   nav ul {
     display: flex;
-    flex-wrap: wrap;         /* Allow wrapping to 2 lines */
+    flex-wrap: wrap;        /* Allow wrapping to 2 lines */
     justify-content: center;
-    gap: 10px 20px;          /* row-gap and column-gap */
+    gap: 10px 15px;          /* row-gap and column-gap */
     padding: 0;
     margin: 0 auto 10px;
     list-style: none;
@@ -579,7 +605,7 @@ nav ul li a:hover::after {
 
   nav ul li a {
     font-size: 14px;
-    padding: 6px 10px;
+    padding: 6px 8px;
     text-decoration: none;
     color: white;
     display: inline-block;
@@ -626,44 +652,14 @@ nav ul li a:hover::after {
   
   .sub-title {
     font-size: 28px;
-  }
-  .sub-title {
-  text-align: center;
+    text-align: center;
   }
     
   .about-col-2 p {
     font-size: 16px;
     text-align: center;
   }
-}
 
-  @media (max-width: 992px) {
-  .fun-facts-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .fun-col-1 img {
-    max-width: 280px;
-  }
-
-  .fun-col-2 {
-    text-align: left;
-  }
-
-  .fun-col-2 .sub-title {
-    font-size: 32px;
-  }
-
-  .fun-list li {
-    text-align: left;
-    border-left: none;
-    padding-left: 0;
-  }
-}
-
-@media (max-width: 576px) {
   .fun-facts {
     padding: 60px 5%;
   }
@@ -689,11 +685,3 @@ nav ul li a:hover::after {
     max-width: 220px;
   }
 }
-
-
-
-
-
-
-
-
